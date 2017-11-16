@@ -7,10 +7,11 @@ def createClassData(hp, damage, agility, armor):
     return newClass
 
 heroClasses = {
-    'knight': [100, 50, 10, 60],
-    'madman': [30, 100, 50, 10]
+    'knight': createClassData(100, 50, 10, 60),
+    'madman': createClassData(30, 100, 50, 10),    
 }
-
-#another_dict = {"number":23, 2: True, "my_list":[1,2,3]}
-
-print(heroClasses)
+"""
+todo:
+  1. Array heros name in this module
+  2. In module run.py create class Game & make def genRandomCharackter
+"""
