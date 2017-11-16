@@ -17,6 +17,16 @@ class Hero(object):
     def printHero(self):
         dictEnRus = {
             'knight': 'рыцарь',
-            'madman': 'безумец'
+            'bard': 'бард',
+            'mage': 'маг',
+            'thief': 'вор',
+            'archer': 'лучник',
+            'atronah': 'атронах', # обладает повышенным запасом маны, но не может её восстанавливать.
+            'alchemist': 'алхимик',
+            'potholer': 'спелеолог', # нужен в основном при походе в пещеры, может использоваться для поиска руд.
+            'nomad': 'кочевник',
+            'jaeger': 'егерь',
+            'barbarian': 'варвар',
+            'mercenary': 'наемник'
         }
         return 'Привет, меня зовут ' + self.name + ' и я ' + dictEnRus[self.heroClassStr] + str(self.hp)
